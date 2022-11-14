@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    font-family: myFirstFont;
+    text-align: center;
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(Comfortaa-SemiBold.ttf);
+}
+
+header {
+    background-color: rgb(94, 169, 177);
+    /* max-height: 10vh; */
+    height:fit-content;
+    width: 100vw;
+    filter: drop-shadow(0 0 1rem rgb(34, 170, 185));
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vh;
+}
+
+body {
+    background-color: rgb(41, 41, 41);
+    color:rgb(0, 0, 0);
+    margin: 0;
+}
+
+.music-form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.add-song {
+    background-color: rgb(203, 203, 203);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 30vh;
+    width: 40vh;
+    border: 5px solid rgb(34, 170, 185);
+    box-sizing: border-box;
+    border-radius: 0.5vh;
+    padding: 4px;
+    filter: drop-shadow(0 0 0.5rem rgb(34, 170, 185));
+}
+
+h1 {
+    color:rgb(0, 0, 0);
+}
+
+a {
+    color: black;
+    border: 1px solid black;
+    box-sizing: border-box;
+    border-radius: 0.5vh;
+    padding: 4px;
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+    border: 1px solid black;
+    box-sizing: border-box;
+    border-radius: 0.5vh;
+    padding: 4px;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: rgba(61, 61, 61, 0.262);
+    color: black;
+    border: 1px solid black;
+    box-sizing: border-box;
+    border-radius: 0.5vh;
+    padding: 4px;
+    text-decoration: none;
+    transition: 0.5s all ease-in-out;
+}
+
+.nav-link {
+    color: black;
+    border: 1px solid black;
+    box-sizing: border-box;
+    border-radius: 0.5vh;
+    padding: 4px;
+    text-decoration: none;
+}
+
+.nav-link:link {
+    color: black;
+    border: 1px solid black;
+    box-sizing: border-box;
+    border-radius: 0.5vh;
+    padding: 4px;
+    text-decoration: none;
+}
+
+.nav-link:visited {
+    color: black;
+    border: 1px solid black;
+    box-sizing: border-box;
+    border-radius: 0.5vh;
+    padding: 4px;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    background-color: rgba(61, 61, 61, 0.262);
+    color: black;
+    border: 1px solid black;
+    box-sizing: border-box;
+    border-radius: 0.5vh;
+    padding: 4px;
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    height: 80vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    background-color: rgb(203, 203, 203);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 30vh;
+    width: 40vh;
+    border: 5px solid rgb(34, 170, 185);
+    box-sizing: border-box;
+    border-radius: 0.5vh;
+    padding: 4px;
+    filter: drop-shadow(0 0 0.5rem rgb(34, 170, 185));
+}
