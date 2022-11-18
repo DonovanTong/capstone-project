@@ -22,9 +22,12 @@ app.use(
 )
 app.use(csurf())
 
+const authRoutes = require('./routes/auth')
 
-app.listen(7070, () => {
-  console.log('Listening on port 7070')
+app.use('/auth', authRoutes)
+
+app.listen(8080, () => {
+  console.log('Listening on port 8080')
 })
 
 module.exports = app

@@ -14,8 +14,9 @@ function App() {
       setAuth(data)
     })
   }, [])
-  if (auth == null) {
-    return <Loading/>
+
+  if (auth === null) {
+    return <Home/>
   }
   if (auth) {
     return <SpotifyRecommender auth={auth}/>

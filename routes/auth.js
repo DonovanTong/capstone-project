@@ -13,6 +13,7 @@ router.get('/login', (req, res) => {
     })}`)
 })
 
+
 router.get('/callback', async (req, res) => {
     const {code} = req.query
     const clientId = process.env.SPOTIFY_CLIENT_ID
@@ -20,20 +21,17 @@ router.get('/callback', async (req, res) => {
     const redirect_uri = process.env.SPOTIFY_REDIRECT_URI
     const grant_type = 'authorization_code'
 
-    const basicHeader = 
-Buffer.from(`${clientId}:${secret}`).toString('base64')
-    const {data} = await
-axios.post('https://accounts.spotify.come/api/token',
-querystring.stringify({
+    const basicHeader = Buffer.from(`${clientId}:${secret}`).toString('base64')
+    const {data} = await axios.post('https://accounts.spotify.com/api/token', querystring.stringify({
     grant_type,
     code,
     redirect_uri,
-}), {
-    headers: {
-        Authorization: `Basic ${basicHeader}`,
-        'Content-Type': 'application/x-www-form-urlencoded'
-    }
-})
+    }), {
+        headers: {
+            Authorization: `Basic ${basicHeader}`,
+            'Content-Type': 'application/x-www-form-urlencoded'
+        }
+    })
     const sessionJWTObject = {
         token: data.access_token,
     }
